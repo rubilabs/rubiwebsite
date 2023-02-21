@@ -7,8 +7,15 @@ import { useNavigate } from 'react-router-dom'
 export default function BlockchainDeveloper3() {
 
     const [value, setValue] = useState("")
+    const [selectedPosition, setSelectedPosition] = useState(null)
+    const [selectedSkill, setSelectedSkill] = useState(null)
+    const [selectedLanguage, setSelectedLanguage] = useState(null)
+    const [selectedExperience, setSelectedExperience] = useState(null)
+    const [selectedPrevious, setSelectedPrevious] = useState(null)
+    const [selectedMedia, setSelectedMedia] = useState(null)
+    const [selectedTimeline, setSelectedTimeline] = useState(null)
 
-    const position = [
+    const application = [
         { value: 'blockchain-developer', label: 'Blockchain Developer'}
     ]
 
@@ -49,10 +56,26 @@ export default function BlockchainDeveloper3() {
         { value: 'none', label: 'None of the above'},
     ]
 
-    const changeHandler = value => {
-        setValue(value)
-    }
-    const [language, setLanguage] = useState("");
+    const developer = [
+        { value: 'python', label: 'Python'},
+        { value: 'go', label: 'GO'},
+        { value: 'java', label: 'Java'},
+        { value: 'ruby', label: 'Ruby'},
+        { value: 'c++', label: 'C++'},
+        { value: 'javascript', label: 'Javascript'},
+        { value: 'typescript', label: 'Typescript'}
+    ]
+
+    const changeHandler = (selectedOption) => {
+        setValue(selectedOption.value);
+        setSelectedPosition(selectedOption.value);
+        setSelectedSkill(selectedOption.value)
+        setSelectedLanguage(selectedOption.value)
+        setSelectedExperience(selectedOption.value)
+        setSelectedPrevious(selectedOption.value)
+        setSelectedMedia(selectedOption.value)
+        setSelectedTimeline(selectedOption.value)
+    };
     const [workexp, setWorkExp] = useState("");
     const [motivation, setMotivation] = useState("");
     const [contribute, setContribute] = useState("");
@@ -67,12 +90,18 @@ export default function BlockchainDeveloper3() {
         navigate('/blockchaindeveloper-4')
 
     const docRef = await addDoc(collection(db, "applicant-information"), {
-        language: language,
+        position: selectedPosition,
+        skill: selectedSkill,
+        language: selectedLanguage,
+        workingexp: selectedExperience,
+        previousexp: selectedPrevious,
         workexp: workexp,
         motivation: motivation,
         contribute: contribute,
         obstacles: obstacles,
         dob: dob,
+        hearing: selectedMedia,
+        start: selectedTimeline   
     })
     setLanguage('')
     setWorkExp('')
@@ -125,25 +154,25 @@ export default function BlockchainDeveloper3() {
         <div className="mt-8 md:flex items-center">
             <div className="flex flex-col md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">I'm applying for</label>
-                <Select required key={position} options={position} onChange={changeHandler} />
+                <Select required value={selectedPosition} options={application} onChange={setSelectedPosition} />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Skill Level</label>
-                <Select required key={level} options={level} onChange={changeHandler} />
+                <Select required value={selectedSkill} options={level} onChange={setSelectedSkill} />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Programming Languages</label>
-                <input value={language} onChange={(e) => setLanguage(e.target.value)} required type="name" tabIndex={0} aria-label="Enter programming languages" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
+                <Select required value={selectedLanguage} isMulti options={developer} onChange={setSelectedLanguage} />
             </div>
         </div>
         <div className="mt-12 md:flex items-center">
             <div className="flex flex-col md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Do you have any working experiences?</label>
-                <Select required key={work} options={work} onChange={changeHandler} />
+                <Select required value={selectedExperience} options={work} onChange={setSelectedExperience} />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Previous working experiences</label>
-                <Select required key={experience} options={experience} onChange={changeHandler} />
+                <Select required value={selectedPrevious} options={experience} onChange={setSelectedPrevious} />
             </div>
         </div>
         <div className="mt-12 md:flex items-center grid grid-cols-3 row-span-2">
@@ -170,11 +199,11 @@ export default function BlockchainDeveloper3() {
         </div>
         <div className="flex flex-col mt-12 items-start">
                 <label className="mb-3 text-sm leading-none text-gray-800">Where did you hear about us?</label>
-                <Select required key={media} options={media} onChange={changeHandler} />
+                <Select required value={selectedMedia} options={media} onChange={setSelectedMedia} />
         </div>
         <div className="flex flex-col mt-12 items-start">
                 <label className="mb-3 text-sm leading-none text-gray-800">When can you start?</label>
-                <Select required key={timeline} options={timeline} onChange={changeHandler} />
+                <Select required value={selectedTimeline} options={timeline} onChange={setSelectedTimeline} />
         </div>
         <div className="mt-12">
             <div className="py-4 flex items-center">

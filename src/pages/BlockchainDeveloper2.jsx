@@ -1,8 +1,36 @@
 import React, {useMemo, useState} from "react"
+import 'react-intersection-observer'
 
 export default function BlockchainDeveloper2() {
 
-  
+    // const lastTermsElement = document.querySelector('.terms-and-conditions');
+    // const acceptBtn = document.querySelector('.btn-accept');
+
+    // const termsObserverCallback = (lastP, termsObserver) => {
+    //     if(lastP[0].isIntersecting){
+    //         acceptBtn.classList.add('enabled');
+    //         acceptBtn.focus();
+    //         termsObserver.unobserve(lastTermsElement);
+    //     };
+    // }
+
+    // const termsObserverOptions = {
+    //     threshold: 1
+    // }
+
+    // const termsObserver = new IntersectionObserver(termsObserverCallback, termsObserverOptions);
+
+    // termsObserver.observe(lastTermsElement);
+
+    // acceptBtn.addEventListener('click', function(e){
+    //     if(!e.target.classList.contains('enabled')){
+    //         const btnMessage = document.querySelector('.btn-message');
+    //         btnMessage.classList.add('visible');
+    //         setTimeout(function(){
+    //             btnMessage.classList.remove('visible')
+    //         }, '2000');
+    //     };
+    // })
 
   return (
     <div>
@@ -39,7 +67,7 @@ export default function BlockchainDeveloper2() {
         <p role="contentinfo" className=" focus:outline-nonetext-sm font-light leading-tight text-gray-600 mt-4">
             Please read through the terms and conditions before proceeding. <br />
         </p>
-        <div aria-label="terms" role="terms" className="grid align-middle justify-center text-left m-4 overflow-y-scroll scroll-smooth w-1/2 h-[50vh]">
+        <div aria-label="terms-and-conditions" role="terms" className="grid align-middle justify-center text-left m-4 overflow-y-scroll scroll-smooth w-1/2 h-[50vh]">
             <span className="text-md font-semibold text-center m-2">
               Welcome to the Rubi Labs recruitment page  
             </span>
@@ -88,14 +116,16 @@ export default function BlockchainDeveloper2() {
                 I have read and agree to the terms and conditions.
             </span>
         </div>
-        <button disabled  role="button" aria-label="accept" className="flex items-center justify-center py-4 px-7 focus:outline-none bg-white border rounded border-gray-400 mt-7 md:mt-14 hover:bg-gray-100  focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
+        <div aria-label="btn-container">
+        <button disabled role="button" aria-label="btn-accept" className="flex items-center justify-center py-4 px-7 focus:outline-none bg-white border rounded border-gray-400 mt-7 md:mt-14 hover:bg-gray-100  focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
         <a href='/blockchaindeveloper-3'><span className="text-sm font-medium text-center text-gray-800 capitalize">Next Step</span></a>
             <svg className="mt-1 ml-3" width={12} height={8} viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.01 3H0V5H8.01V8L12 4L8.01 0V3Z" fill="#242731" />
             </svg>
         </button>
-        <div className="absolute px-6 py-1 -mt-40 ml-32 bg-black w-80 h-10 pointer-events-none transition-all ease-in-out duration-200 opacity-1">
+        <div aria-label="btn-message" className="absolute px-6 py-1 -mt-40 ml-40 bg-black w-80 h-10 pointer-events-none transition-all ease-in-out duration-200 opacity-1">
             <span className=" text-white text-center align-middle justify-center">Please read the terms and conditions</span>
+        </div>
         </div>
     </div>
     <style dangerouslySetInnerHTML={{ __html: "\n          .checkbox:checked + .check-icon {\n              display: flex;\n          }\n      " }} />

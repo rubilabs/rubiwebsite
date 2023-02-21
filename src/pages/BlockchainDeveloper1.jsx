@@ -88,31 +88,31 @@ export default function BlockchainDeveloper1() {
             
             <div className="flex flex-col">
                 <label className="mb-3 text-sm leading-none text-gray-800">First name</label>
-                <input value={firstname} onChange={(e) => setFirstName(e.target.value)} type="name" tabIndex={0} aria-label="Enter first name" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
+                <input required value={firstname} onChange={(e) => setFirstName(e.target.value)} type="name" tabIndex={0} aria-label="Enter first name" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Last name</label>
-                <input value={lastname} onChange={(e) => setLastName(e.target.value)} type="name" tabIndex={0} aria-label="Enter last name" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
+                <input required value={lastname} onChange={(e) => setLastName(e.target.value)} type="name" tabIndex={0} aria-label="Enter last name" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
             </div>
         </div>
         <div className="mt-12 md:flex items-center">
             <div className="flex flex-col">
                 <label className="mb-3 text-sm leading-none text-gray-800">Email Address</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" tabIndex={0} aria-label="Enter email Address" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
+                <input required value={email} onChange={(e) => setEmail(e.target.value)} type="email" tabIndex={0} aria-label="Enter email Address" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Phone number</label>
-                <input value={phone} onChange={(e) => setPhone(e.target.value)} type="text" tabIndex={0} aria-label="Enter phone number" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
+                <input required value={phone} onChange={(e) => setPhone(e.target.value)} type="text" tabIndex={0} aria-label="Enter phone number" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
             </div>
         </div>
         <div className="mt-12 md:flex items-center">
             <div className="flex flex-col">
                 <label className="mb-3 text-sm leading-none text-gray-800">Date of birth</label>
-                <input value={dob} onChange={(e) => setDob(e.target.value)} type='date' tabIndex={0} aria-label="Enter date of birth" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
+                <input required value={dob} onChange={(e) => setDob(e.target.value)} type='date' tabIndex={0} aria-label="Enter date of birth" className="w-64 bg-gray-100 text-sm font-medium leading-none text-gray-800 p-3 border rounded border-gray-200" />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
                 <label className="mb-3 text-sm leading-none text-gray-800">Nationality</label>
-                <Select options={options} value={value} onChange={changeHandler} />
+                <Select required options={options} value={value} onChange={changeHandler} />
             </div>
         </div>
         <div className="mt-12">

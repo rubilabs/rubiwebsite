@@ -9,7 +9,7 @@ const JobOpening = () => {
     <>
      <Navbar />
      <JobHeader />
-     {/* <JobItem /> */}
+     <JobItem />
      <Footer />
     </>
   )
