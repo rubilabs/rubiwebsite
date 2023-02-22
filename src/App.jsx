@@ -18,6 +18,7 @@ import CustomerSupport from "./pages/CustomerSupport"
 import BlockchainDeveloper3 from "./pages/BlockchainDeveloper3"
 import BlockchainDeveloper4 from "./pages/BlockchainDeveloper4"
 import Privacy from "./pages/Privacy"
+import SystemDesign1 from "./pages/SystemDesign1"
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/blockchaindeveloper-2" element={<BlockchainDeveloper2 />} />
         <Route path="/blockchaindeveloper-3" element={<BlockchainDeveloper3 />} />
         <Route path="/blockchaindeveloper-4" element={<BlockchainDeveloper4 />} />
+        <Route path="/systemdesign-1" element={<SystemDesign1 />} />
       </Routes>
       </BrowserRouter>
     </>

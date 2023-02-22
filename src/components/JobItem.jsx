@@ -22,6 +22,7 @@ const positions = [
     department: 'Development',
     closeDate: '2023-04-10',
     closeDateFull: 'April 10, 2023',
+    href: 'systemdesign-1'
   },
   {
     id: 3,
