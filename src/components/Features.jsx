@@ -2,6 +2,8 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import React, {useEffect} from "react";
 import { useAnimation } from "framer-motion";
+import Maincomponent from "../assets/maincomponent.png";
+import Maincomponent2 from "../assets/maincomponent2.png";
 
 export default function Features() {
 
@@ -93,7 +95,7 @@ export default function Features() {
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="public/assets/maincomponent.png"
+                src={Maincomponent}
                 alt="Inbox user interface"
               />
             </div>
@@ -135,7 +137,7 @@ export default function Features() {
             <motion.div animate={animate} className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="public/assets/maincomponent2.png"
+                src={Maincomponent2}
                 alt="Customer profile user interface"
               />
             </motion.div>

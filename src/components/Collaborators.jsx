@@ -1,4 +1,6 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Gcp from "../assets/gcp.png";
+import Kubernetes from "../assets/kubernetes.png";
+
 export default function Collaborators() {
     return (
       <div className="bg-sky-200 bg-opacity-25 select-none">
@@ -20,15 +22,15 @@ export default function Collaborators() {
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4 grayscale hover:grayscale-0 cursor-pointer ease-in-out duration-300">
                   <img 
                   className="h-12" 
-                  src="public/assets/gcp.png" 
-                  alt="Chainlink"
+                  src={Gcp}
+                  alt="GCP"
                   onClick={() => window.open('https://console.cloud.google.com/?hl=ja')}
                   />
                 </div>
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4 grayscale hover:grayscale-0 cursor-pointer ease-in-out duration-300">
                   <img 
                   className="h-12" 
-                  src="public/assets/kubernetes.png" 
+                  src={Kubernetes}
                   alt="Kubernetes"
                   onClick={() => window.open('https://kubernetes.io/id/')}
                   />

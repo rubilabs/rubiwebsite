@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import React, {useEffect} from "react";
 import { useAnimation } from "framer-motion";
+import Pledge from "../assets/pledge.jpg";
 
 const stats = [
     { label: 'Founded', value: '2022' },
@@ -75,7 +76,7 @@ const stats = [
               <motion.div animate={animate} className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
                 <img
                   className="absolute inset-0 h-full w-full object-cover"
-                  src="public/assets/pledge.jpg"
+                  src={Pledge}
                   alt=""
                 />
                 <div className="absolute inset-0 bg-sky-200 mix-blend-multiply" />

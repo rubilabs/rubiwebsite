@@ -18,7 +18,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { BsWallet2 } from 'react-icons/bs'
 import { GiProcessor } from 'react-icons/gi'
 import { RxDashboard } from 'react-icons/rx'
-import Rubi from '../../public/assets/rubi.png'
+import Rubi from '../assets/rubi.png'
 
 const solutions = [
   {
