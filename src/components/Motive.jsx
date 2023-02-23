@@ -1,6 +1,6 @@
 import { MdOutlineCached, MdOutlineBuild } from 'react-icons/md'
 import { AiOutlineRadarChart } from 'react-icons/ai'
-import Background from '../assets/background.jpg'
+import Background from '../../public/assets/background.jpg'
 
 const supportLinks = [
   {

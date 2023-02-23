@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import Background2 from '../assets/background2.jpg'
+import Background2 from '../../public/assets/background2.jpg'
 
 const metrics = [
     { id: 1, stat: 'Registered Capital', emphasis: '10 million', rest: 'Japanese Yen.' },

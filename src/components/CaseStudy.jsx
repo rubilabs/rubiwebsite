@@ -1,4 +1,4 @@
-import Rubi from '../assets/rubi.png';
+import Rubi from '../../public/assets/rubi.png';
 
 const posts = [
     {

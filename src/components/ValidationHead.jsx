@@ -1,4 +1,4 @@
-import Validate from '../assets/validate.png'
+import Validate from '../../public/assets/validate.png'
 import { UsersIcon } from '@heroicons/react/24/outline'
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"

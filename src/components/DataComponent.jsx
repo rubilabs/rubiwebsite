@@ -1,4 +1,4 @@
-import Process from '../assets/process.png'
+import Process from '../../public/assets/process.png'
 import { UsersIcon } from '@heroicons/react/24/outline'
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"

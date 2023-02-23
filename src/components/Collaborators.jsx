@@ -20,7 +20,7 @@ export default function Collaborators() {
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4 grayscale hover:grayscale-0 cursor-pointer ease-in-out duration-300">
                   <img 
                   className="h-12" 
-                  src="src/assets/gcp.png" 
+                  src="public/assets/gcp.png" 
                   alt="Chainlink"
                   onClick={() => window.open('https://console.cloud.google.com/?hl=ja')}
                   />
@@ -28,7 +28,7 @@ export default function Collaborators() {
                 <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4 grayscale hover:grayscale-0 cursor-pointer ease-in-out duration-300">
                   <img 
                   className="h-12" 
-                  src="src/assets/kubernetes.png" 
+                  src="public/assets/kubernetes.png" 
                   alt="Kubernetes"
                   onClick={() => window.open('https://kubernetes.io/id/')}
                   />
