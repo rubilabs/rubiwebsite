@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import React, {useEffect} from "react";
 import { useAnimation } from "framer-motion";
+import Partner from "../assets/partner.jpg";
 import Maincomponent from "../assets/maincomponent.png";
 import Maincomponent2 from "../assets/maincomponent2.png";
 
@@ -81,7 +82,7 @@ export default function Features() {
                     <div className="flex-shrink-0">
                       <img
                         className="h-6 w-6 rounded-full"
-                        src="src/assets/partner.jpg"
+                        src={Partner}
                         alt=""
                       />
                     </div>

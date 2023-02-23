@@ -101,7 +101,7 @@ const stats = [
                     </div>
   
                     <footer className="mt-4">
-                      <p className="text-base font-semibold text-sky-200">James William, Director of Rubi Labs Inc</p>
+                      <p className="text-base font-semibold text-sky-200">The Rubi Labs Research Team</p>
                     </footer>
                   </blockquote>
                 </div>
