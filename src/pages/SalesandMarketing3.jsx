@@ -4,7 +4,7 @@ import { db } from '../firebase/config'
 import { collection, addDoc } from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom'
 
-export default function BlockchainDeveloper3() {
+export default function SalesandMarketing3() {
 
     const [value, setValue] = useState("")
     const [selectedPosition, setSelectedPosition] = useState(null)
@@ -16,7 +16,7 @@ export default function BlockchainDeveloper3() {
     const [selectedTimeline, setSelectedTimeline] = useState(null)
 
     const application = [
-        { value: 'blockchain-developer', label: 'Blockchain Developer'}
+        { value: 'sales-marketing', label: 'Sales and Marketing'}
     ]
 
     const level = [
@@ -56,14 +56,14 @@ export default function BlockchainDeveloper3() {
         { value: 'none', label: 'None of the above'},
     ]
 
-    const developer = [
-        { value: 'python', label: 'Python'},
-        { value: 'go', label: 'GO'},
-        { value: 'java', label: 'Java'},
-        { value: 'ruby', label: 'Ruby'},
-        { value: 'c++', label: 'C++'},
-        { value: 'javascript', label: 'Javascript'},
-        { value: 'typescript', label: 'Typescript'}
+    const skill = [
+        { value: 'japanese', label: 'Japanese'},
+        { value: 'korean', label: 'Korean'},
+        { value: 'chinese', label: 'Chinese'},
+        { value: 'english', label: 'English'},
+        { value: 'spanish', label: 'Spanish'},
+        { value: 'german', label: 'German'},
+        { value: 'french', label: 'French'}
     ]
 
     const changeHandler = (selectedOption) => {
@@ -87,7 +87,7 @@ export default function BlockchainDeveloper3() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        navigate('/confirmation')
+        navigate('/blockchaindeveloper-4')
 
     const docRef = await addDoc(collection(db, "applicant-information"), {
         position: selectedPosition,
@@ -155,8 +155,8 @@ export default function BlockchainDeveloper3() {
                 <Select required value={selectedSkill} options={level} onChange={setSelectedSkill} />
             </div>
             <div className="flex flex-col md:ml-12 md:mt-0 mt-8">
-                <label className="mb-3 text-sm leading-none text-gray-800">Programming Languages</label>
-                <Select required value={selectedLanguage} isMulti options={developer} onChange={setSelectedLanguage} />
+                <label className="mb-3 text-sm leading-none text-gray-800">Spoken Languages</label>
+                <Select required value={selectedLanguage} isMulti options={skill} onChange={setSelectedLanguage} />
             </div>
         </div>
         <div className="mt-12 md:flex items-center">
@@ -215,15 +215,15 @@ export default function BlockchainDeveloper3() {
                 </p>
             </div>
         </div>
-        <button type="submit" role="button" aria-label="Next step" className="flex items-center justify-center py-4 px-7 focus:outline-none bg-white border rounded border-gray-400 mt-7 md:mt-14 hover:bg-gray-100  focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
+        <button type="submit" role="button" aria-label="Confirm" className="flex items-center justify-center py-4 px-7 focus:outline-none bg-white border rounded border-gray-400 mt-7 md:mt-14 hover:bg-gray-100  focus:ring-2 focus:ring-offset-2 focus:ring-gray-700">
             <a href='/confirmation'><span className="text-sm font-medium text-center text-gray-800 capitalize">Submit</span></a>
             <svg className="mt-1 ml-3" width={12} height={8} viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8.01 3H0V5H8.01V8L12 4L8.01 0V3Z" fill="#242731" />
             </svg>
         </button>
         </form>
-    </div>
-    <style dangerouslySetInnerHTML={{ __html: "\n          .checkbox:checked + .check-icon {\n              display: flex;\n          }\n      " }} />
+    </div>  
+    <style required dangerouslySetInnerHTML={{ __html: "\n          .checkbox:checked + .check-icon {\n              display: flex;\n          }\n      " }} />
     </div>
   )
 }

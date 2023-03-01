@@ -32,16 +32,17 @@ const positions = [
     department: 'Sales',
     closeDate: '2023-04-10',
     closeDateFull: 'April 10, 2023',
+    href: 'salesandmarketing-1'
   },
-  {
-    id: 3,
-    title: 'Business Development',
-    type: 'Full-time',
-    location: 'Takanawa',
-    department: 'Strategy',
-    closeDate: '2023-04-10',
-    closeDateFull: 'April 10, 2023',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Business Development',
+  //   type: 'Full-time',
+  //   location: 'Takanawa',
+  //   department: 'Strategy',
+  //   closeDate: '2023-04-10',
+  //   closeDateFull: 'April 10, 2023',
+  // },
 ]
 
 export default function JobItem() {

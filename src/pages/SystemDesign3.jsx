@@ -4,7 +4,7 @@ import { db } from '../firebase/config'
 import { collection, addDoc } from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom'
 
-export default function BlockchainDeveloper3() {
+export default function SystemDesign3() {
 
     const [value, setValue] = useState("")
     const [selectedPosition, setSelectedPosition] = useState(null)
@@ -16,7 +16,7 @@ export default function BlockchainDeveloper3() {
     const [selectedTimeline, setSelectedTimeline] = useState(null)
 
     const application = [
-        { value: 'blockchain-developer', label: 'Blockchain Developer'}
+        { value: 'system-design', label: 'System Design'}
     ]
 
     const level = [

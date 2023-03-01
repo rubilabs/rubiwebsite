@@ -16,9 +16,14 @@ import BlockchainDeveloper1 from "./pages/BlockchainDeveloper1"
 import BlockchainDeveloper2 from "./pages/BlockchainDeveloper2"
 import CustomerSupport from "./pages/CustomerSupport"
 import BlockchainDeveloper3 from "./pages/BlockchainDeveloper3"
-import BlockchainDeveloper4 from "./pages/BlockchainDeveloper4"
 import Privacy from "./pages/Privacy"
 import SystemDesign1 from "./pages/SystemDesign1"
+import SystemDesign2 from "./pages/SystemDesign2"
+import SystemDesign3 from "./pages/SystemDesign3"
+import SalesandMarketing1 from "./pages/SalesandMarketing1"
+import SalesandMarketing2 from "./pages/SalesandMarketing2"
+import SalesandMarketing3 from "./pages/SalesandMarketing3"
+import Modal from "./pages/Modal"
 
 
 function App() {
@@ -42,9 +47,14 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/blockchaindeveloper-1" element={<BlockchainDeveloper1 />} />
         <Route path="/blockchaindeveloper-2" element={<BlockchainDeveloper2 />} />
-        <Route path="/blockchaindeveloper-3" element={<BlockchainDeveloper3 />} />
-        <Route path="/blockchaindeveloper-4" element={<BlockchainDeveloper4 />} />
+        <Route path="/blockchaindeveloper-3" element={<BlockchainDeveloper3 />} />        
         <Route path="/systemdesign-1" element={<SystemDesign1 />} />
+        <Route path="/systemdesign-2" element={<SystemDesign2 />} />
+        <Route path="/systemdesign-3" element={<SystemDesign3 />} />
+        <Route path="/salesandmarketing-1" element={<SalesandMarketing1 />} />
+        <Route path="/salesandmarketing-2" element={<SalesandMarketing2 />} />
+        <Route path="/salesandmarketing-3" element={<SalesandMarketing3 />} />
+        <Route path="/confirmation" element={<Modal />} />
       </Routes>
       </BrowserRouter>
     </>
