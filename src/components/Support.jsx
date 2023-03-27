@@ -48,8 +48,8 @@ export default function Support() {
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>Takanawa 4-23-6</p>
-                  <p>Minato-ku, Tokyo</p>
+                  <p>Jsquare 2F Nihonbashi Koamicho 18-10</p>
+                  <p>Chuo-ku, Tokyo</p>
                 </dd>
               </div>
               <div className="mt-6">
