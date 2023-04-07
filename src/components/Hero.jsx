@@ -105,7 +105,7 @@ export default function Hero() {
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-sky-800/20">
                   <span className="text-gray-600">
-                    We are opening our next round of funding.{' '}
+                    Funding, investor relations, and corporate finances information.{' '}
                     <a href="/investment" className="font-semibold text-sky-500 hover:text-sky-300 ease-in-out duration-300">
                       <span className="absolute inset-0" aria-hidden="true" />
                       Read more <span aria-hidden="true">&rarr;</span>

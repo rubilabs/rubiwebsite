@@ -4,6 +4,7 @@ import InvestmentBody from '../components/InvestmentBody'
 import InvestmentBottom from '../components/InvestmentBottom'
 import InvestmentHead from '../components/InvestmentHead'
 import Navbar from '../components/Navbar'
+import InvestmentPage from '../components/InvestmentPage'
 
 const Investment = () => {
   return (
@@ -11,6 +12,7 @@ const Investment = () => {
      <Navbar />
      <InvestmentHead />
      <InvestmentBody />
+     <InvestmentPage />
      <InvestmentBottom />
      <Footer />
     </>

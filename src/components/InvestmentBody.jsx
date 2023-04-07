@@ -50,8 +50,7 @@ import {
             We are very focused in delivering our vision
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-            malesuada. Eleifend condimentum id viverra nulla.
+            Take a look at our values and how we are delivering our mission.
           </p>
           <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
