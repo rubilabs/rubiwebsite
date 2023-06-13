@@ -2,7 +2,7 @@
 import Background2 from '../assets/background2.jpg'
 
 const metrics = [
-    { id: 1, stat: 'Registered Capital', emphasis: '10 million', rest: 'Japanese Yen.' },
+    { id: 1, stat: 'Registered Capital', emphasis: '200 million', rest: 'Japanese Yen.' },
     { id: 2, stat: 'Address', emphasis: 'Jsquare 2F', rest: '18-10 Nihonbashi Koamicho, Chuo-ku, Tokyo.' },
     { id: 3, stat: 'Officers', emphasis: '4', rest: 'executives and 3 advisors.' },
     { id: 4, stat: 'Established', emphasis: 'October 18', rest: '2022.' },
