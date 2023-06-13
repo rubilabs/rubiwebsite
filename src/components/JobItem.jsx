@@ -8,30 +8,30 @@ const positions = [
     id: 1,
     title: 'Blockchain Developer',
     type: 'Full-time',
-    location: 'Takanawa',
+    location: 'Nihonbashi',
     department: 'Development',
     closeDate: '2023-04-10',
-    closeDateFull: 'April 10, 2023',
+    closeDateFull: 'December 10, 2023',
     href: '/blockchaindeveloper-1'
   },
   {
     id: 2,
     title: 'System Design',
     type: 'Full-time',
-    location: 'Takanawa',
+    location: 'Nihonbashi',
     department: 'Development',
     closeDate: '2023-04-10',
-    closeDateFull: 'April 10, 2023',
+    closeDateFull: 'December 10, 2023',
     href: 'systemdesign-1'
   },
   {
     id: 3,
     title: 'Sales and Marketing',
     type: 'Full-time',
-    location: 'Takanawa',
+    location: 'Nihonbashi',
     department: 'Sales',
     closeDate: '2023-04-10',
-    closeDateFull: 'April 10, 2023',
+    closeDateFull: 'December 10, 2023',
     href: 'salesandmarketing-1'
   },
   // {
