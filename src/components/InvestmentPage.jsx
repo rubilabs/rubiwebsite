@@ -10,7 +10,7 @@ export default function InvestmentPage() {
             <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
               Please login into your investor account to gain access to privileges
             </p>
-            <button className="mt-12 bg-blue-500 rounded-lg w-52 h-12 font-medium text-lg text-white hover:bg-blue-600 ease-in-out duration-300">Rubi Privilege</button>
+            <button onClick={() => window.open('https://rubi-privilege.vercel.app/')} className="mt-12 bg-blue-500 rounded-lg w-52 h-12 font-medium text-lg text-white hover:bg-blue-600 ease-in-out duration-300">Rubi Privilege</button>
           </div>
         </div>
       </div>
