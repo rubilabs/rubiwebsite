@@ -33,9 +33,9 @@ const solutions = [
     href: '/dataprocessing',
     icon: GiProcessor,
   },
-  { name: 'Dashboard Service', 
-    description: "The lapislazuli interactive system to access data requests and validated data", 
-    href: '#', 
+  { name: 'eKYC', 
+    description: "Lapis eKYC built on top of our architecture for an open environment", 
+    href: '/ekyc', 
     icon: RxDashboard 
   },
   {

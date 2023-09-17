@@ -24,7 +24,7 @@ import SalesandMarketing1 from "./pages/SalesandMarketing1"
 import SalesandMarketing2 from "./pages/SalesandMarketing2"
 import SalesandMarketing3 from "./pages/SalesandMarketing3"
 import Modal from "./pages/Modal"
-
+import Ekyc from "./pages/eKYC"
 
 function App() {
 
@@ -55,6 +55,7 @@ function App() {
         <Route path="/salesandmarketing-2" element={<SalesandMarketing2 />} />
         <Route path="/salesandmarketing-3" element={<SalesandMarketing3 />} />
         <Route path="/confirmation" element={<Modal />} />
+        <Route path="/ekyc" element={<Ekyc />} />
       </Routes>
       </BrowserRouter>
     </>
