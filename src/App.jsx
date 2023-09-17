@@ -24,7 +24,7 @@ import SalesandMarketing1 from "./pages/SalesandMarketing1"
 import SalesandMarketing2 from "./pages/SalesandMarketing2"
 import SalesandMarketing3 from "./pages/SalesandMarketing3"
 import Modal from "./pages/Modal"
-import Ekyc from "./pages/eKYC"
+import Ekyc from "./pages/Ekyc"
 
 function App() {
 
