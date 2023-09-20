@@ -5,6 +5,7 @@ import EkycHeader from '../components/EkycHeader'
 import EkycComponent from '../components/EkycComponent'
 import EkycContent from '../components/EkycContent'
 import EkycSection from '../components/EkycSection'
+import EkycInformation from '../components/EkycInformation'
 
 const Ekyc = () => {
   return (
@@ -13,6 +14,7 @@ const Ekyc = () => {
      <EkycHeader />
      <EkycComponent />
      <EkycContent />
+     <EkycInformation />
      <EkycSection />
      <Footer />
     </>

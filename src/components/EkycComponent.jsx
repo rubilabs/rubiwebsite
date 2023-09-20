@@ -43,7 +43,7 @@ export default function EkycComponent() {
     <div ref={ref} className="relative bg-white select-none">
       <motion.div animate={animate} className="h-56 bg-white sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <img
-          className="h-[400px] w-[600px] ml-20"
+          className="md:h-[400px] md:w-[600px] md:ml-20 sm:ml-10 relative"
           src={Ekyc}
         />
       </motion.div>
@@ -62,7 +62,7 @@ export default function EkycComponent() {
             of the user. Validation procedures will also be given to the institution for a double check to prevent misconduct
             and user mismatch.
           </p>
-         
+          <br></br>
         </motion.div>
       </div>
     </div>

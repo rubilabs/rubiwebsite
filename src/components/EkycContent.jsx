@@ -43,7 +43,7 @@ export default function EkycContent() {
     <div ref={ref} className="relative bg-white select-none">
       <motion.div animate={animate} className="h-56 bg-white sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <img
-          className="h-[400px] w-[600px] ml-20"
+          className="md:h-[400px] md:w-[600px] md:ml-20 sm:ml-10 relative"
           src={Mismatch}
         />
       </motion.div>
@@ -61,7 +61,7 @@ export default function EkycContent() {
             Government-issued ID matching to see whether the provided ID matches the category of the selected ID.
             Face match to check whether the applicant is the same person as the ID submitted will be automatically validated.
           </p>
-         
+          <br></br>
         </motion.div>
       </div>
     </div>
