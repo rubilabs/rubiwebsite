@@ -5,7 +5,7 @@ import ValidationHead from '../components/ValidationHead'
 import ValidationOpening from '../components/ValidationOpening'
 import ValidationSpec from '../components/ValidationSpec'
 
-const Validation = () => {
+const Rubilinkecosystem = () => {
   return (
     <>
      <Navbar />
@@ -17,4 +17,4 @@ const Validation = () => {
   )
 }
 
-export default Validation
+export default Rubilinkecosystem

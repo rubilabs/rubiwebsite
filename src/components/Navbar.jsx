@@ -55,8 +55,8 @@ const resources = [
     icon: LifebuoyIcon,
   },
   {
-    name: 'Guides',
-    description: 'The technical guide to rubilink blockchain',
+    name: 'Use Cases',
+    description: 'The use cases of our Rubilink Ecosystem',
     href: '',
     icon: BookmarkSquareIcon,
   },

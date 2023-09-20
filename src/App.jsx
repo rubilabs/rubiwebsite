@@ -4,7 +4,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom"
 import Home from "./pages/Home"
 import Company from "./pages/Company"
 import Resources from "./pages/Resources"
-import Validation from "./pages/Validation"
+import Rubilinkecosystem from "./pages/Rubilinkecosystem"
 import Contact from "./pages/Contact"
 import Database from "./pages/Database"
 import HelpDesk from "./pages/HelpDesk"
@@ -37,7 +37,7 @@ function App() {
         <Route path="/customersupport" element={<CustomerSupport />} />
         <Route path="/company" element={<Company />} />
         <Route path="/resources" element={<Resources />} />
-        <Route path="/validation" element={<Validation />} />
+        <Route path="/rubilink-ecosystem" element={<Rubilinkecosystem />} />
         <Route path="/database" element={<Database />} />
         <Route path="/helpdesk" element={<HelpDesk />} />
         <Route path="/integration" element={<Integration />} />

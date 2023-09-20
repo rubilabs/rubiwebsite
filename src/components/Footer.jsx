@@ -4,10 +4,9 @@ import { useState } from 'react';
 
 const navigation = {
     solutions: [
-      { name: 'Valdiation Authority', href: '/validation' },
-      { name: 'Data Processing', href: '/dataprocessing' },
-      { name: 'Dashboard Service', href: '#' },
-      { name: 'Integrations', href: '/integration' },
+      { name: 'Rubilink Ecosystem', href: '/rubilink-ecosystem' },
+      { name: 'Database', href: '/database' },
+      { name: 'eKYC', href: '/ekyc' },
     ],
     support: [
       { name: 'Whitepaper', href: 'https://rubilink.gitbook.io/the-system/' },
