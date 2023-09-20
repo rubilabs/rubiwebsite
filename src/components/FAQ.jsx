@@ -7,7 +7,7 @@ const faqs = [
     {
       question: 'What is the main service that rubi labs provides?',
       answer:
-        'We provide validation authority, data storage and processing, dashboard, and API integration service.',
+        'We provide system infrastructure, database services, and eKYC.',
     },
     {
       question: 'Are banks the only company that can be validator?',
@@ -15,8 +15,8 @@ const faqs = [
       'No, institutions other than banks can also be part of our ecosystem. Please visit our customer support to see our qualification.'
     },
     {
-      question: 'Is rubilink banking wallet service limited to banks?',
-      answer: 'No, we provide support to corporates that feel the need to use our product.'
+      question: 'Is rubilink banking solution service limited to banks?',
+      answer: 'No, we rubilink is tailored towards financial sector, where institutions other than banks can also benefit from the service.'
     },
     {
       question: 'Is the rubi labs team open for collaboration?',

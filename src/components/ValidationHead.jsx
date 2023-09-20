@@ -74,7 +74,7 @@ export default function ValidationHead() {
               </div>
               <div className="flex flex-col px-8 pt-8">
                 <dt className="order-2 text-base font-medium text-gray-500">Traffic</dt>
-                <dd className="order-1 text-2xl font-bold text-blue-600 sm:text-3xl sm:tracking-tight">100k+</dd>
+                <dd className="order-1 text-2xl font-bold text-blue-600 sm:text-3xl sm:tracking-tight">140k</dd>
               </div>
             </dl>
           </motion.div>

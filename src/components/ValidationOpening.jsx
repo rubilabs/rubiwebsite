@@ -8,7 +8,7 @@ export default function ValidationOpening() {
               Be a part of the <br></br><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600"> ecosystem</span>
             </p>
             <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
-              Connect to our database and validate your own data when conducting transactions or any other exchange
+              Connect to our ecosystem and conduct a peer-to-peer data validation for higher data integrity
             </p>
           </div>
         </div>

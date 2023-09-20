@@ -115,7 +115,7 @@ export default function Hero() {
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  We provide <span className='text-transparent bg-gradient-to-r bg-clip-text from-sky-500 via-sky-400 to-sky-600'>data storage</span> for multi-segment business
+                  We provide <span className='text-transparent bg-gradient-to-r bg-clip-text from-sky-500 via-sky-400 to-sky-600'>ecosystem</span> for multi-segment business
                 </h1>
                 <p className="mt-6 text-lg font-normal leading-8 text-gray-600 sm:text-center">
                   Explore how we can benefit you with our services

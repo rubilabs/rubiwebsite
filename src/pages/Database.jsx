@@ -5,7 +5,7 @@ import DataSection from '../components/DataSection'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
-const DataProcessing = () => {
+const Database = () => {
   return (
     <>
      <Navbar />
@@ -17,4 +17,4 @@ const DataProcessing = () => {
   )
 }
 
-export default DataProcessing
+export default Database

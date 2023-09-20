@@ -1,11 +1,12 @@
 import Process from '../assets/process.png'
 import { MdOutlineMultipleStop } from 'react-icons/md'
+import { SiHiveBlockchain } from 'react-icons/si'
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import React, {useEffect} from "react";
 import { useAnimation } from "framer-motion";
 
-export default function DataComponent() {
+export default function DataBottom() {
 
   const {ref, inView} = useInView();
     const animation = useAnimation();
@@ -51,16 +52,14 @@ export default function DataComponent() {
         <motion.div animate={animation} className="mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10">
           <div>
             <div className="flex h-12 w-12 items-center justify-center rounded-md bg-blue-500 text-white">
-              <MdOutlineMultipleStop className="h-6 w-6" aria-hidden="true" />
+              <SiHiveBlockchain className="h-6 w-6" aria-hidden="true" />
             </div>
           </div>
           <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            We provide a cross-institutional open database
+            We provide a configurable database tailored for institutions with secretive data
           </h2>
           <p className="mt-6 text-lg text-gray-500">
-            Our cross-institutional database are designed to protect institutions against malpractices. 
-            Our infrastructure pings and informs institutions in the ecosystem to verify the incoming data, and
-            validate the data to ensure the accuracy and authenticity of the data.
+            Our configurable database is designed to support reconciliation, 
           </p>
          
         </motion.div>

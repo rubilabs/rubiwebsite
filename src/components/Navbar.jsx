@@ -16,33 +16,28 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { BsWallet2 } from 'react-icons/bs'
-import { GiProcessor } from 'react-icons/gi'
+import { BiNetworkChart } from 'react-icons/bi'
 import { RxDashboard } from 'react-icons/rx'
+import { CgDatabase } from 'react-icons/cg'
 import Rubi from '../assets/rubi.png'
 
 const solutions = [
   {
-    name: 'Validation Authority',
-    description: 'Validation authority tailored for corporate clients',
+    name: 'Rubilink Ecosystem',
+    description: 'One ecosystem for a simpler cross-data validation method',
     href: '/validation',
-    icon: BsWallet2,
+    icon: BiNetworkChart,
   },
   {
-    name: 'Data Processing',
-    description: 'Bypassing data array within the system and broadcasting to participants within the network',
-    href: '/dataprocessing',
-    icon: GiProcessor,
+    name: 'Database',
+    description: 'Database service tailored for institutions handling sensitive information',
+    href: '/database',
+    icon: CgDatabase,
   },
   { name: 'eKYC', 
     description: "Lapis eKYC built on top of our architecture for an open environment", 
     href: '/ekyc', 
     icon: RxDashboard 
-  },
-  {
-    name: 'Integrations',
-    description: "Open API to integrate to the rubilink blockchain",
-    href: '/integration',
-    icon: ArrowPathIcon,
   },
 ]
 const callsToAction = [

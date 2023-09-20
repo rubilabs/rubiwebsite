@@ -6,7 +6,7 @@ import Company from "./pages/Company"
 import Resources from "./pages/Resources"
 import Validation from "./pages/Validation"
 import Contact from "./pages/Contact"
-import DataProcessing from "./pages/DataProcessing"
+import Database from "./pages/Database"
 import HelpDesk from "./pages/HelpDesk"
 import Integration from "./pages/Integration"
 import JobOpening from "./pages/JobOpening"
@@ -38,7 +38,7 @@ function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/validation" element={<Validation />} />
-        <Route path="/dataprocessing" element={<DataProcessing />} />
+        <Route path="/database" element={<Database />} />
         <Route path="/helpdesk" element={<HelpDesk />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/jobopening" element={<JobOpening />} />
