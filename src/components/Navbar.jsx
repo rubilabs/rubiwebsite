@@ -25,7 +25,7 @@ const solutions = [
   {
     name: 'Rubilink Ecosystem',
     description: 'One ecosystem for a simpler cross-data validation method',
-    href: '/validation',
+    href: '/rubilink-ecosystem',
     icon: BiNetworkChart,
   },
   {
